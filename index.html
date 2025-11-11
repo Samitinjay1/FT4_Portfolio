@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FT-IV Portfolio | Samitinjay Tripathy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2>⚡ FT-IV</h2>
+      <button id="toggleBtn">☰</button>
+    </div>
+    <a href="activity1.html" target="content-frame">🌞 Activity 1</a>
+    <a href="activity2.html" target="content-frame">💧 Activity 2</a>
+    <a href="activity3.html" target="content-frame">🌿 Activity 3</a>
+
+    <div class="footer">
+      <p>Samitinjay Tripathy<br>RA2311003012344</p>
+    </div>
+  </div>
+
+  <div class="main">
+    <iframe name="content-frame" src="activity1.html"></iframe>
+  </div>
+
+  <script>
+    const sidebar = document.getElementById("sidebar");
+    const toggleBtn = document.getElementById("toggleBtn");
+    toggleBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("collapsed");
+    });
+  </script>
+</body>
+</html>
